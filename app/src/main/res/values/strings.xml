@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TourGuideAlexTroy</string>
+
+
+    <string name="oh_name">Opera House</string>
+    <string name="rbg_name">Royal Botanic Gardens</string>
+    <string name="bm_name">Blue Mountains</string>
+    <string name="mb_name">Manly Beach</string>
+
+    <string name="tab_title_1">TAB 1</string>
+    <string name="tab_title_2">TAB 2</string>
+    <string name="tab_title_3">TAB 3</string>
+    <string name="tab_title_4">TAB 4</string>
+
+
+</resources>
