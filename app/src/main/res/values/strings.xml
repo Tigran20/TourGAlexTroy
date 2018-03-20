@@ -1,16 +1,49 @@
 <resources>
     <string name="app_name">TourGuideAlexTroy</string>
 
+    <!--Places-->
+    <string name="saint_petersburg">Saint Petersburg</string>
+    <string name="sp_description">Is Russia\'s second-largest city after Moscow, with five million inhabitants in 2012</string>
 
-    <string name="oh_name">Opera House</string>
-    <string name="rbg_name">Royal Botanic Gardens</string>
-    <string name="bm_name">Blue Mountains</string>
-    <string name="mb_name">Manly Beach</string>
+    <string name="the_louvre">The Louvre</string>
+    <string name="tl_description">Is the world\'s largest art museum and a historic monument in Paris, France</string>
 
-    <string name="tab_title_1">TAB 1</string>
-    <string name="tab_title_2">TAB 2</string>
-    <string name="tab_title_3">TAB 3</string>
-    <string name="tab_title_4">TAB 4</string>
+    <string name="colosseum">Colosseum</string>
+    <string name="colosseum_description">Is an oval amphitheatre in the centre of the city of Rome, Italy</string>
+
+    <string name="taj_mahal">Taj Mahal</string>
+    <string name="taj_mahal_description">Is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra</string>
 
 
+    <!--Eats-->
+    <string name="mcdonalds">McDonald\'s</string>
+    <string name="mcdonalds_description">McDonald\'s is an American fast food company, founded in 1940 as a restaurant operated by Richard and Maurice McDonald, in San Bernardino, California, United States</string>
+
+    <string name="kfc">KFC</string>
+    <string name="kfc_description">KFC, until 1991 known as Kentucky Fried Chicken, is an American fast food restaurant chain that specializes in fried chicken </string>
+
+    <string name="pizza_hut">Pizza Hut</string>
+    <string name="pizza_hut_description">Pizza Hut is an American restaurant chain and international franchise founded in 1958 by Dan and Frank Carney </string>
+
+
+    <!--Drinks-->
+    <string name="starbucks">Starbucks</string>
+    <string name="starbucks_description">Starbucks Corporation is an American coffee company and coffeehouse chain. Starbucks was founded in Seattle, Washington in 1971</string>
+
+    <string name="bradleys_spanish_bar">Bradley\'s Spanish Bar</string>
+    <string name="bradleys_spanish_bar_description">A cosy and unassuming little boozer bringing a touch of flamenco to Fitzrovia. Don’t let the name mislead you – tattered furniture and jukebox tunes make Bradley’s as ‘pub’ as it gets. Londoners love the low-key vibe</string>
+
+
+    <!--Events-->
+    <string name="holi">Holi</string>
+    <string name="holi_description">It\'s bordering on cliché to describe India as "colourful" – however, during the festival of Holi there's no other label to apply to it</string>
+
+    <string name="songkran">Songkran</string>
+    <string name="songkran_description">If you\'re in Thailand to celebrate Songkran, the solar new year, you will get wet. Whether you want to or not, you will be shot with water pistols, slapped with wet brooms, hit with water balloons, and even drenched with buckets</string>
+
+
+    <string name="tab_title_1">Places</string>
+    <string name="tab_title_2">Events</string>
+    <string name="tab_title_3">Eats</string>
+    <string name="tab_title_4">Drinks</string>
 </resources>

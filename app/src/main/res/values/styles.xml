@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -15,7 +15,7 @@
         <item name="tabMode">fixed</item>
     </style>
 
-    <style name="AttractionSummaryItem">
+    <style name="CardItem">
         <item name="android:layout_marginLeft">8dp</item>
         <item name="android:layout_marginRight">8dp</item>
         <item name="android:layout_marginTop">8dp</item>
@@ -25,12 +25,14 @@
         <item name="android:clickable">true</item>
     </style>
 
-    <style name="AttractionSummaryRating" parent="android:Widget.Material.RatingBar.Small">
+    <style name="CardRating" parent="android:Widget.Material.RatingBar.Small" tools:targetApi="lollipop">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">right</item>
         <item name="android:numStars">5</item>
         <item name="android:stepSize">0.25</item>
+
+
     </style>
 
 </resources>

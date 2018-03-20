@@ -17,9 +17,8 @@ import java.util.ArrayList;
 
 public class AttractionFragment extends Fragment {
 
-    private static final String TYPE = "TYPE";
+    private static final String TYPE = "type";
     private AttractiveType attrType;
-
 
     public static AttractionFragment newInstance(AttractiveType type) {
         Bundle args = new Bundle();
@@ -35,8 +34,8 @@ public class AttractionFragment extends Fragment {
 
         Bundle arguments = getArguments();
         if (arguments != null) {
-            int typeVal = arguments.getInt(TYPE);
-            attrType = AttractiveType.valueOf(typeVal);
+            int type = arguments.getInt(TYPE);
+            attrType = AttractiveType.valueOf(type);
         }
     }
 

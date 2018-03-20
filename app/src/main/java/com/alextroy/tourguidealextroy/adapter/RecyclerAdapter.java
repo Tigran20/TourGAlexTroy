@@ -1,8 +1,5 @@
 package com.alextroy.tourguidealextroy.adapter;
 
-import android.content.Context;
-import android.content.Intent;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +8,6 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.alextroy.tourguidealextroy.CardAttraction;
 import com.alextroy.tourguidealextroy.R;
 import com.alextroy.tourguidealextroy.model.Attraction;
 
@@ -28,7 +24,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.attraction_summary, parent, false);
+                .inflate(R.layout.attraction_card_item, parent, false);
         return new ViewHolder(view);
     }
 
@@ -39,15 +35,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         holder.attrName.setText(attr.getName());
         holder.attrRating.setRating(attr.getRating());
         holder.attrImage.setImageResource(attr.getImageResourceId());
-
-        holder.attrCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Context context = view.getContext();
-                Intent toCardAttraction = new Intent(context, CardAttraction.class);
-                context.startActivity(toCardAttraction);
-            }
-        });
+        holder.attrDesc.setText(attr.getDescription());
     }
 
     @Override
@@ -59,14 +47,14 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         private final TextView attrName;
         private final ImageView attrImage;
         private final RatingBar attrRating;
-        private final CardView attrCard;
+        private final TextView attrDesc;
 
         private ViewHolder(View view) {
             super(view);
             attrName = view.findViewById(R.id.attraction_name);
             attrImage = view.findViewById(R.id.attraction_image);
             attrRating = view.findViewById(R.id.attraction_rating);
-            attrCard = view.findViewById(R.id.card_view);
+            attrDesc = view.findViewById(R.id.attraction_desc);
         }
     }
 }

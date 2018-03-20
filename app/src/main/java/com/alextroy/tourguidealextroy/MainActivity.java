@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 
-import com.alextroy.tourguidealextroy.adapter.AttractiveListPageAdapter;
+import com.alextroy.tourguidealextroy.adapter.CategoryAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         ViewPager viewPager = findViewById(R.id.viewpager);
 
         if (viewPager != null) {
-            AttractiveListPageAdapter adapter = new AttractiveListPageAdapter(getSupportFragmentManager());
+            CategoryAdapter adapter = new CategoryAdapter(getSupportFragmentManager());
 
             adapter.addFragment(AttractionFragment.newInstance(AttractiveType.TAB_1), getString(R.string.tab_title_1));
             adapter.addFragment(AttractionFragment.newInstance(AttractiveType.TAB_2), getString(R.string.tab_title_2));
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
             viewPager.setAdapter(adapter);
 
-            TabLayout tabLayout = findViewById(R.id.tab_layout);
+            TabLayout tabLayout = findViewById(R.id.tabs);
             tabLayout.setupWithViewPager(viewPager);
         }
     }
